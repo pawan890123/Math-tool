@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.tools a, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.tools a:hover, button:hover {
+    background: #0056b3;
+}
+
+.input-box {
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF;
+    font-size: 18px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkblue;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkgreen;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkorange;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+input, select, button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkblue;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simple & Compound Interest Calculator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <label for="interestType">Select Interest Type:</label>
+            <select id="interestType">
+                <option value="simple">Simple Interest</option>
+                <option value="compound">Compound Interest</option>
+            </select>
+
+            <input type="number" id="principal" class="input-box" placeholder="Enter Principal (₹)">
+            <input type="number" id="rate" class="input-box" placeholder="Enter Rate of Interest (%)">
+            <input type="number" id="time" class="input-box" placeholder="Enter Time">
+            <select id="timeUnit">
+                <option value="years">Years</option>
+                <option value="months">Months</option>
+            </select>
+            <input type="number" id="amount" class="input-box" placeholder="Enter Amount (if known)">
+
+            <label for="missingValue">Find Missing Value:</label>
+            <select id="missingValue">
+                <option value="interest">Find Interest</option>
+                <option value="principal">Find Principal</option>
+                <option value="rate">Find Rate</option>
+                <option value="time">Find Time</option>
+                <option value="amount">Find Final Amount</option>
+            </select>
+
+            <button onclick="calculateInterest()">Calculate</button>
+            <p id="result"></p>
+            <a href="page.html" class="back-link">Back to Home</a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

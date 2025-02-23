@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Graph Plotter</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.1/math.min.js"></script>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        #graph-container { width: 80%; height: 500px; margin: auto; }
+        input, button { padding: 8px; margin: 10px; font-size: 16px; }
+        .btn { background: green; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>3D Graph Plotter (Like Desmos)</h2>
+
+    <!-- Input Field for Function -->
+    <label>Enter Function (in terms of x, y):</label>
+    <input type="text" id="functionInput" value="sin(x) + cos(y)">
+    <button class="btn" onclick="plotGraph()">Plot Graph</button>
+
+    <!-- Graph Container -->
+    <div id="graph-container"></div>
+
+    <script>
+        function plotGraph() {
+            let funcInput = document.getElementById("functionInput").value;
+
+            let x = [], y = [], z = [];
+            for (let i = -5; i <= 5; i += 0.2) {
+                let row = [];
+                for (let j = -5; j <= 5; j += 0.2) {
+                    try {
+                        let zVal = math.evaluate(funcInput, { x: i, y: j });
+                        row.push(zVal);
+                    } catch (e) {
+                        alert("Invalid function! Please enter a valid mathematical function.");
+                        return;
+                    }
+                }
+                z.push(row);
+                x.push(i);
+            }
+            y = x;  // Using symmetric values for y
+
+            let data = [{
+                type: "surface",
+                x: x,
+                y: y,
+                z: z
+            }];
+
+            let layout = { title: "3D Graph", autosize: true };
+            Plotly.newPlot("graph-container", data, layout);
+        }
+
+        // Initial Plot
+        plotGraph();
+    </script>
+</body>
+</html>
